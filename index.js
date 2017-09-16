@@ -1,21 +1,23 @@
 'use strict'
 
+const headers = ['heading', 'Header']
+
 module.exports = function (ast) {
-  let doc = ast.children.reduce(function (doc, node) {
-    if (node.type === 'Header') {
+  const doc = ast.children.reduce(function (doc, node) {
+    if (headers.includes(node.type)) {
       if (doc.length) {
         doc += '\n\n'
       }
-      doc += node.raw
+      doc += node.raw || node.value
     } else {
-      doc += '\n' + node.raw
+      doc += '\n' + (node.raw || node.value)
     }
 
     return doc
   }, '')
 
   if (doc) {
-    doc += '\n'
+    return doc + '\n'
   }
 
   return doc
