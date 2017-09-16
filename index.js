@@ -4,7 +4,7 @@ const headers = ['heading', 'Header']
 
 module.exports = function (ast) {
   const doc = ast.children.reduce(function (doc, node) {
-    if (headers.includes(node.type)) {
+    if (headers.indexOf(node.type) !== -1) {
       if (doc.length) {
         doc += '\n\n'
       }
