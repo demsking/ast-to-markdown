@@ -1,19 +1,17 @@
 {
   "name": "ast-to-markdown",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Transforms an Unist AST to a Markdown text",
   "main": "index.js",
   "scripts": {
     "prepublish": "npm test",
     "pretest": "npm run lint",
-    "test": "mocha --harmony test/*.js",
-    "lint": "standard index.js test/*.js",
-    "coverage": "istanbul --harmony cover _mocha test",
-    "coveralls": "npm run lint && istanbul cover _mocha --report lcovonly -- -R spec test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js --verbose"
+    "test": "jest --coverage --notify test/*.js",
+    "lint": "standard index.js test/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/demsking/ast-to-markdown.git"
+    "url": "git+https://gitlab.com/demsking/ast-to-markdown.git"
   },
   "keywords": [
     "ast",
@@ -24,13 +22,11 @@
   "author": "Sébastien Demanou",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/demsking/ast-to-markdown/issues"
+    "url": "https://gitlab.com/demsking/ast-to-markdown/issues"
   },
-  "homepage": "https://github.com/demsking/ast-to-markdown#readme",
+  "homepage": "https://gitlab.com/demsking/ast-to-markdown",
   "devDependencies": {
-    "coveralls": "^2.13.1",
-    "istanbul": "^0.4.5",
-    "mocha": "^3.5.3",
-    "standard": "^10.0.3"
+    "jest": "^23.1.0",
+    "standard": "^11.0.1"
   }
 }
