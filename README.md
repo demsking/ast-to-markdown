@@ -2,7 +2,7 @@
 
 Transforms an Unist AST to a Markdown text
 
-[![Build Status](https://travis-ci.org/demsking/ast-to-markdown.svg?branch=master)](https://travis-ci.org/demsking/ast-to-markdown) [![Known Vulnerabilities](https://snyk.io/test/github/demsking/ast-to-markdown/badge.svg)](https://snyk.io/test/github/demsking/ast-to-markdown) [![Coverage Status](https://coveralls.io/repos/github/demsking/ast-to-markdown/badge.svg?branch=master)](https://coveralls.io/github/demsking/ast-to-markdown?branch=master)
+[![npm](https://img.shields.io/npm/v/ast-to-markdown.svg)](https://www.npmjs.com/package/ast-to-markdown) [![Build status](https://gitlab.com/demsking/ast-to-markdown/badges/master/build.svg)](https://gitlab.com/demsking/ast-to-markdown/pipelines) [![Test coverage](https://gitlab.com/demsking/ast-to-markdown/badges/master/coverage.svg)](https://gitlab.com/demsking/ast-to-markdown/-/jobs)
 
 ## Install
 
