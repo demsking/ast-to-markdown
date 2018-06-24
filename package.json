@@ -4,8 +4,6 @@
   "description": "Transforms an Unist AST to a Markdown text",
   "main": "index.js",
   "scripts": {
-    "prepublish": "npm test",
-    "pretest": "npm run lint",
     "test": "jest --coverage --notify test/*.js",
     "lint": "standard index.js test/*.js"
   },
