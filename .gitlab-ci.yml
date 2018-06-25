@@ -7,6 +7,7 @@ stages:
 code quality:
   stage: test
   script:
+    - npm ci
     - npm run lint
 
 npm outdated:
