@@ -10,7 +10,7 @@ module.exports = function (ast) {
       }
       doc += node.raw || node.value
     } else {
-      doc += '\n' + (node.raw || node.value)
+      doc += '\n\n' + (node.raw || node.value)
     }
 
     return doc
