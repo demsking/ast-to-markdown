@@ -1,6 +1,6 @@
 {
   "name": "ast-to-markdown",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Transforms an Unist AST to a Markdown text",
   "main": "index.js",
   "scripts": {
