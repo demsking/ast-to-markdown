@@ -1,11 +1,9 @@
 {
   "name": "ast-to-markdown",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Transforms an Unist AST to a Markdown text",
   "main": "index.js",
   "scripts": {
-    "prepublish": "npm test",
-    "pretest": "npm run lint",
     "test": "jest --coverage --notify test/*.js",
     "lint": "standard index.js test/*.js"
   },
@@ -26,7 +24,7 @@
   },
   "homepage": "https://gitlab.com/demsking/ast-to-markdown",
   "devDependencies": {
-    "jest": "^23.1.0",
+    "jest": "^23.2.0",
     "standard": "^11.0.1"
   }
 }
