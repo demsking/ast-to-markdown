@@ -2,11 +2,10 @@
 
 const fs = require('fs')
 const path = require('path')
-const assert = require('assert')
 
 const toMarkdown = require('..')
 
-/* global describe it */
+/* global describe it expect */
 
 describe('transform', () => {
   const expected = fs.readFileSync(path.join(__dirname, './expected.md'), 'utf8')
@@ -16,20 +15,20 @@ describe('transform', () => {
     const md = toMarkdown(tree)
     const expected = ''
 
-    assert.equal(expected, md)
+    expect(md).toEqual(expected)
   })
 
   it('should successfully transform a filled tree', () => {
     const tree = require('./tree')
     const md = toMarkdown(tree)
 
-    assert.equal(expected, md)
+    expect(md).toEqual(expected)
   })
 
   it('should successfully transform a mdast tree', () => {
     const tree = require('./tree.mdast')
     const md = toMarkdown(tree)
 
-    assert.equal(expected, md)
+    expect(md).toEqual(expected)
   })
 })
